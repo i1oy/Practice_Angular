@@ -1,0 +1,24 @@
+<div *ngIf="weibo">
+  <div>
+    <mat-card>
+
+      <mat-card-header>
+        <mat-card-title>
+          <h3>Weibo In Map</h3>
+        </mat-card-title>
+      </mat-card-header>
+
+      <mat-card-content>
+        <p>
+          {{ weibo.user_name }}
+        </p>
+        <p>
+          {{ weibo.loc_info }}
+        </p>
+        <p>
+          {{ weibo.location.coordinates | json }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
