@@ -18,6 +18,7 @@
         <p>
           {{ weibo.location.coordinates | json }}
         </p>
+        <p [innerHTML]="weibo.content"></p>
       </mat-card-content>
     </mat-card>
   </div>
